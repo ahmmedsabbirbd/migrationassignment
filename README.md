@@ -36,7 +36,7 @@ The migrationassignment is a simple Laravel project and updated versioin. I incl
 ## Demo
 Project Home Page
 
-[![Demo Video](https://raw.githubusercontent.com/ahmmedsabbirbd/migrationassignment/master/public/assets/documentation/wellcome)](https://youtu.be/RYAh3rSyWHs)
+[![Demo Video](https://raw.githubusercontent.com/ahmmedsabbirbd/migrationassignment/migrationassignment/master/public/assets/documentation/wellcome)](https://youtu.be/RYAh3rSyWHs)
 
 ## Technologies Used
 
