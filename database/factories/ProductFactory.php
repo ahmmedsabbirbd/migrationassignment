@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,12 +17,16 @@ class ProductFactory extends Factory
      */
     public function definition(): array
     {
+        $title = fake()->title();
+        $slug = Str::slug($title, '-');
+
         return [
-            'name'=> fake()->title(),
+            'name'=> $title,
             'price'=> fake()->randomElement([10000, 20000, 50000]),
-            'quantity'=> '20',
-            'category'=> 'phone',
-            'description'=> 'my description',
+            'quantity'=> fake()->randomElement([3, 2, 1, 4, 4]),
+            'category'=> fake()->word(),
+            'description'=> fake()->sentence(),
+            // 'slug'=> $slug,
         ];
     }
 }
